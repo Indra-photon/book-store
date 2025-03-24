@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Book Library</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by title or author...">
+                <button id="searchButton"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="controls">
+            <div class="view-toggle">
+                <span>View:</span>
+                <button id="gridViewBtn" class="view-btn active"><i class="fas fa-th"></i> Grid</button>
+                <button id="listViewBtn" class="view-btn"><i class="fas fa-list"></i> List</button>
+            </div>
+            
+            <div class="sort-options">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect">
+                    <option value="relevance">Relevance</option>
+                    <option value="title">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="bookList" class="book-container grid-view">
+            
+        </div>
+
+        <div class="pagination">
+            <button id="loadMoreBtn" class="load-more-btn">Load More Books</button>
+            <div id="loadingSpinner" class="loading-spinner hidden">
+                <i class="fas fa-spinner fa-spin"></i> Loading...
+            </div>
+        </div>
+    </div>
+
+  
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modalContent" class="modal-book-details">
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Book Library. Created using FreeAPI.app</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
