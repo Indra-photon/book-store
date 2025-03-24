@@ -2,7 +2,7 @@
 
 A modern, responsive web application for browsing and searching books using the FreeAPI.app service. This project demonstrates how to create a feature-rich front-end application that interacts with a REST API.
 
-![Book Library Laptop View](/Masterji%20Project%204%20Book%20Library/Demos/image.png)
+![Book Library Laptop View](/Demos/image.png)
 
 ## ✨ Features
 
